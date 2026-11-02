@@ -30,7 +30,7 @@ def register_schedule(application, scheduler, item):
     hour, minute = reminder_clock(item["start_time"], item["reminder_minutes"])
 
     async def send_reminder():
-        room_text = f"\n📍 Ruangan: {item['room']}" if item["room"] else ""
+        room_text = f"\nRuangan: {item['room']}" if item["room"] else ""
         message = (
             "PENGINGAT ABSENSI KULIAH\n\n"
             f"Mata kuliah: {item['course_name']}\n"

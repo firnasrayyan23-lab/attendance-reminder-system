@@ -94,7 +94,7 @@ async def tambah(update: Update, context: ContextTypes.DEFAULT_TYPE):
     register_schedule(context.application, scheduler, item)
 
     await update.message.reply_text(
-        "✅ Jadwal berhasil ditambahkan!\n\n"
+        "Jadwal berhasil ditambahkan!\n\n"
         f"ID: {schedule_id}\n"
         f"Mata kuliah: {course_name}\n"
         f"Hari: {day.capitalize()}\n"
@@ -113,7 +113,7 @@ async def jadwal(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
 
-    lines = ["📚 JADWAL KULIAH KAMU\n"]
+    lines = ["JADWAL KULIAH KAMU\n"]
     for item in items:
         room = f" | {item['room']}" if item["room"] else ""
         lines.append(

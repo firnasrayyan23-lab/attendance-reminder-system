@@ -11,9 +11,9 @@ Bot Telegram pengingat jadwal kuliah dan absensi, dibuat dengan Python, SQLite, 
 - Pengingat otomatis 15 menit sebelum kelas
 - Zona waktu WITA (`Asia/Makassar`)
 
-## Persiapan Windows
-1. Instal Python 3.10 atau lebih baru.
-2. Ekstrak ZIP dan buka folder ini di Zed.
+## Persiapan 
+1. Instal Python
+2. Ekstrak ZIP dan buka folder ini di editor code.
 3. Buat dan aktifkan virtual environment:
 
    ```powershell
